@@ -36,8 +36,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
-
 ul {
   display: flex;
 }
@@ -143,7 +141,7 @@ button:active {
 
 .menu--open {
   max-height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .menu--open .menu__backdrop {
@@ -172,15 +170,11 @@ button:active {
   top: 10px;
   right: 20px;
   padding: 8px;
-  color: white;
+  color: rgb(226, 222, 226);
 }
 
 
-/* 
-
-LANDING
-
-*/
+/* LANDING */
 
 #landing {
   background-color: rgba(115, 66, 214, 0.1)
@@ -208,8 +202,7 @@ header {
 
 .header__img--wrapper {
   padding: 20px;
-
-  /* Added this after the tutorial to 
+/* Added this after the tutorial to 
   show it over the wave on larger screens */
   z-index: 50;
 }
@@ -233,11 +226,8 @@ header {
 .no-cursor {
   cursor: not-allowed;
 }
-/* 
 
-HIGHLIGHTS 
-
-*/
+/* HIGHLIGHTS */
 
 #highlights {
   position: relative;
@@ -245,7 +235,7 @@ HIGHLIGHTS
 }
 
 #highlights:after,
-#highlights:before {
+#highlights:before  {
   background: url('assets/wave.svg');
   content: "";
   position: absolute;
@@ -255,6 +245,7 @@ HIGHLIGHTS
   z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
+  transform: translateY(-100%) rotate(180deg);
 }
 
 #highlights:before {
@@ -304,11 +295,7 @@ HIGHLIGHTS
   text-align: center;
 }
 
-/* 
-
-FEATURES 
-
-*/
+/* FEATURES */
 
 #features {
   padding-top: 8vw;
@@ -363,21 +350,13 @@ FEATURES
   color: #bfbfbf;
 }
 
-/* 
-
-EXPLORE
-
-*/
+/* EXPLORE */
 
 #explore {
   background-color: rgba(115, 66, 214, 0.1);
 }
 
-/* 
-
-FOOTER
-
-*/
+/* FOOTER */
 
 footer {
   background-color: #242424;
@@ -406,6 +385,7 @@ footer {
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+
 @media (max-width: 768px) {
   .header__description {
     padding: 0 24px;
@@ -430,6 +410,7 @@ footer {
 
 
 /* SMALL PHONES, LARGE SMARTPHONES */
+
 @media (max-width: 550px) {
   .btn__menu {
     display: block;
